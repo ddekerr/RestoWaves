@@ -19,6 +19,21 @@
 - categories треба створювати окремо від продукту, існують відповідні ендпоінти для мінімального керування категоріями
 - products - є відповідні ендпоінти для оновлення моделей, брендів і категорій і такж для мінімального керування продуктами, такі як створення, оновлення, видалення
 - google-sheets - модуль який раз на годину читає гугл таблицю і оновлює базу згідно з вмістом цієї таблиці, для автоматичних запитів використав [Task Scheduling](https://docs.nestjs.com/techniques/task-scheduling), який заснований на cron.
+- 
+## .env файл
+
+```bash
+PORT=
+
+POSTGRES_HOST=
+POSTGRES_PORT=
+POSTGRES_USERNAME=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+
+GOOGLE_PRIVATE_KEY=
+GOOGLE_SERVICE_EMAIL=
+```
 
 ## Інсталяція проєкту
 
