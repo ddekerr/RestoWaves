@@ -9,7 +9,7 @@ import { ApiResponse } from './ApiResponse';
 export const ApiSwaggerResponse = <TModel extends Type<any>>(
   status: number,
   model: TModel,
-  description: string,
+  description?: string,
 ) => {
   return applyDecorators(
     ApiExtraModels(ApiResponse, model),

@@ -4,10 +4,10 @@ export class ApiResponse<T> {
   @ApiProperty()
   status: number;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   message?: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   data?: T;
 
   constructor(status: number, message?: string, data?: T) {
